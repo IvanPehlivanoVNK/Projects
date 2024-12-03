@@ -8,10 +8,10 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Data
-@Repository
+
 @Setter
 @Getter
+@Repository
 public class Weather {
     private double latitude;
     private double longitude;

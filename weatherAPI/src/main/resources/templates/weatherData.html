@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Pet Profile</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.2/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap-icons/1.11.1/font/bootstrap-icons.css}">
+    <script defer th:src="@{/webjars/bootstrap/5.3.2/js/bootstrap.bundle.js}"></script>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<form action="/xd" method="post" th:object="${city}">
+    <label for="cityName">City Name:</label>
+    <input type="text" id="cityName" name="cityName" th:field="*{name}" />
+    <button type="submit">Submit</button>
+</form>
+
+
+</body>
+</html>
